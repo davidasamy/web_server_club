@@ -1,0 +1,186 @@
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
+
+
+
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  padding: 30px 30px 30px 0px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:none;
+}
+.logo {
+  color: white;
+  text-shadow: 0px 0px 3px #FFFFFF;
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: 40px;
+}
+a {
+  transition: all 0.25s ease-in-out
+}
+ul {
+  display: flex;
+  letter-spacing: 1px;
+  padding-right: 140px;
+}
+li{
+  margin-left: 10px;
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 3px;
+  border: 2px solid transparent;
+  opacity: 0.7;
+  font-size: 1.2em;
+  text-align: center;
+  border-bottom: 2px solid white;
+}
+
+li a:hover{
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+  border-bottom: 2px solid transparent;
+  border-radius: 15px;
+  opacity: 1;
+  text-shadow: 0px 0px 8px #FFFFFF;
+}
+
+
+#main{
+  font-size: 3em;
+  color: black;
+  padding: 400px 0;
+  text-align: center;
+}
+
+ #wwd, #projects, #contact, #about, #start{
+  width: 100vw;
+  height: 100vh;
+} 
+
+
+#start{
+  background: url('backgrounds/bg1.svg') no-repeat;
+  background-size:cover;
+}
+
+#wwd {
+  background: url('backgrounds/bg2.svg') no-repeat;
+  background-size:cover;
+}
+
+#projects {
+  background: url('backgrounds/bg3.svg') no-repeat;
+  background-size:cover;
+}
+
+#about {
+  background: url('backgrounds/bg4.svg') no-repeat;
+  background-size:cover;
+} 
+
+#contact {
+  background: url('backgrounds/bg5.svg') no-repeat;
+  background-size:cover;
+}
+
+
+
+/*
+::-webkit-scrollbar, ::-webkit-scrollbar-button, ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece, ::-webkit-scrollbar-corner {
+  display: none;
+}*/
+
+.welcome {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40vh;
+  width: auto;
+  text-align: center;
+}
+
+@keyframes logostretch {
+  from {letter-spacing: normal;
+       padding-left: 40px;}
+  to {letter-spacing: 0.1em;
+     padding-left: 30px;}
+}
+
+@keyframes linkstretch1 {
+  from {}
+  to {}
+}
+@keyframes linkstretch2 {
+  from {}
+  to {}
+}
+#tosite {
+  color: white;
+  font-size: 3em;
+  text-shadow: 0px 0px 3px #FFFFFF;
+}
+
+
+.logo {
+  animation-name: logostretch;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+#a1 {
+  animation-name: linkstretch1;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+#a2 {
+  animation-name: linkstretch2;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+#a3 {
+  animation-name: linkstretch1;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+#a4 {
+  animation-name: linkstretch2;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
